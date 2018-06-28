@@ -13,6 +13,10 @@
 		8B0FD9FE20E108D1004E33FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FD9FD20E108D1004E33FE /* Assets.xcassets */; };
 		8B0FDA0120E108D1004E33FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FD9FF20E108D1004E33FE /* LaunchScreen.storyboard */; };
 		8B0FDA0420E108D1004E33FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA0320E108D1004E33FE /* main.m */; };
+		8B0FDA7920E2667C004E33FE /* PRNotificationIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA7820E2667C004E33FE /* PRNotificationIconView.m */; };
+		8B0FDA8320E37AB0004E33FE /* PRNotificationCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8220E37AB0004E33FE /* PRNotificationCounter.m */; };
+		8B0FDA8620E39ECA004E33FE /* PRPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8520E39ECA004E33FE /* PRPatient.m */; };
+		8B0FDA8920E3A7AB004E33FE /* PRPatientIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		8B0FDA0020E108D1004E33FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B0FDA0220E108D1004E33FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0FDA0320E108D1004E33FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B0FDA7720E2667C004E33FE /* PRNotificationIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRNotificationIconView.h; sourceTree = "<group>"; };
+		8B0FDA7820E2667C004E33FE /* PRNotificationIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRNotificationIconView.m; sourceTree = "<group>"; };
+		8B0FDA8120E37AB0004E33FE /* PRNotificationCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRNotificationCounter.h; sourceTree = "<group>"; };
+		8B0FDA8220E37AB0004E33FE /* PRNotificationCounter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRNotificationCounter.m; sourceTree = "<group>"; };
+		8B0FDA8420E39ECA004E33FE /* PRPatient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPatient.h; sourceTree = "<group>"; };
+		8B0FDA8520E39ECA004E33FE /* PRPatient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPatient.m; sourceTree = "<group>"; };
+		8B0FDA8720E3A7AB004E33FE /* PRPatientIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPatientIconView.h; sourceTree = "<group>"; };
+		8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPatientIconView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,65 @@
 		8B0FD9F320E108CF004E33FE /* PillsReminder */ = {
 			isa = PBXGroup;
 			children = (
-				8B0FD9F420E108CF004E33FE /* AppDelegate.h */,
-				8B0FD9F520E108CF004E33FE /* AppDelegate.m */,
-				8B0FD9F720E108CF004E33FE /* ViewController.h */,
-				8B0FD9F820E108CF004E33FE /* ViewController.m */,
-				8B0FD9FA20E108CF004E33FE /* Main.storyboard */,
-				8B0FD9FD20E108D1004E33FE /* Assets.xcassets */,
-				8B0FD9FF20E108D1004E33FE /* LaunchScreen.storyboard */,
+				8B0FDA7E20E26839004E33FE /* Main */,
+				8B0FDA7D20E2682B004E33FE /* Supporting files */,
+				8B0FDA7C20E267EE004E33FE /* Models */,
+				8B0FDA7B20E267E3004E33FE /* Views */,
+				8B0FDA7A20E267D0004E33FE /* ViewControllers */,
 				8B0FDA0220E108D1004E33FE /* Info.plist */,
 				8B0FDA0320E108D1004E33FE /* main.m */,
 			);
 			path = PillsReminder;
+			sourceTree = "<group>";
+		};
+		8B0FDA7A20E267D0004E33FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FD9F720E108CF004E33FE /* ViewController.h */,
+				8B0FD9F820E108CF004E33FE /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8B0FDA7B20E267E3004E33FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FDA7720E2667C004E33FE /* PRNotificationIconView.h */,
+				8B0FDA7820E2667C004E33FE /* PRNotificationIconView.m */,
+				8B0FDA8720E3A7AB004E33FE /* PRPatientIconView.h */,
+				8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8B0FDA7C20E267EE004E33FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FDA8120E37AB0004E33FE /* PRNotificationCounter.h */,
+				8B0FDA8220E37AB0004E33FE /* PRNotificationCounter.m */,
+				8B0FDA8420E39ECA004E33FE /* PRPatient.h */,
+				8B0FDA8520E39ECA004E33FE /* PRPatient.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8B0FDA7D20E2682B004E33FE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FD9FD20E108D1004E33FE /* Assets.xcassets */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8B0FDA7E20E26839004E33FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8B0FD9F420E108CF004E33FE /* AppDelegate.h */,
+				8B0FD9F520E108CF004E33FE /* AppDelegate.m */,
+				8B0FD9FA20E108CF004E33FE /* Main.storyboard */,
+				8B0FD9FF20E108D1004E33FE /* LaunchScreen.storyboard */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B0FDA7920E2667C004E33FE /* PRNotificationIconView.m in Sources */,
 				8B0FD9F920E108CF004E33FE /* ViewController.m in Sources */,
 				8B0FDA0420E108D1004E33FE /* main.m in Sources */,
+				8B0FDA8620E39ECA004E33FE /* PRPatient.m in Sources */,
 				8B0FD9F620E108CF004E33FE /* AppDelegate.m in Sources */,
+				8B0FDA8920E3A7AB004E33FE /* PRPatientIconView.m in Sources */,
+				8B0FDA8320E37AB0004E33FE /* PRNotificationCounter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

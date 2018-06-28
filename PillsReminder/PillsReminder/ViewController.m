@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "PRNotificationIconView.h"
+#import "PRPatientIconView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *notificationBarButtonItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *patientBarButtonItem;
 
 @end
 
@@ -16,14 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    PRNotificationIconView *notificationIconView = [[PRNotificationIconView alloc] init];
+
+    self.notificationBarButtonItem.title = nil;
+    self.notificationBarButtonItem.customView = notificationIconView;
+
+    PRPatientIconView *patientIconView = [[PRPatientIconView alloc] init];
+
+    self.patientBarButtonItem.title = nil;
+    self.patientBarButtonItem.customView = patientIconView;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)notificationReceived:(UIButton *)sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kAppDelegateReceivedNotification" object:self];
 }
-
 
 @end
