@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B0FD9F620E108CF004E33FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FD9F520E108CF004E33FE /* AppDelegate.m */; };
-		8B0FD9F920E108CF004E33FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FD9F820E108CF004E33FE /* ViewController.m */; };
+		8B0FD9F920E108CF004E33FE /* PRTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FD9F820E108CF004E33FE /* PRTodayViewController.m */; };
 		8B0FD9FC20E108CF004E33FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FD9FA20E108CF004E33FE /* Main.storyboard */; };
 		8B0FD9FE20E108D1004E33FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FD9FD20E108D1004E33FE /* Assets.xcassets */; };
 		8B0FDA0120E108D1004E33FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FD9FF20E108D1004E33FE /* LaunchScreen.storyboard */; };
@@ -17,14 +17,19 @@
 		8B0FDA8320E37AB0004E33FE /* PRNotificationCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8220E37AB0004E33FE /* PRNotificationCounter.m */; };
 		8B0FDA8620E39ECA004E33FE /* PRPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8520E39ECA004E33FE /* PRPatient.m */; };
 		8B0FDA8920E3A7AB004E33FE /* PRPatientIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */; };
+		8B0FDAA720E50F97004E33FE /* PRTakePillTodayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDAA620E50F97004E33FE /* PRTakePillTodayCell.m */; };
+		8B0FDAAA20E51580004E33FE /* PRPill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDAA920E51580004E33FE /* PRPill.m */; };
+		8B0FDAAD20E5191C004E33FE /* PRPillToday.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FDAAC20E5191C004E33FE /* PRPillToday.m */; };
+		8B4B3F3220E52E3D008A5851 /* PRTakePillTodayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B0FDAA320E503D4004E33FE /* PRTakePillTodayCell.xib */; };
+		8B4B3F4D20E66509008A5851 /* ApproveTakenPillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B3F4C20E66509008A5851 /* ApproveTakenPillViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B0FD9F120E108CF004E33FE /* PillsReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillsReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0FD9F420E108CF004E33FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B0FD9F520E108CF004E33FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B0FD9F720E108CF004E33FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8B0FD9F820E108CF004E33FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B0FD9F720E108CF004E33FE /* PRTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTodayViewController.h; sourceTree = "<group>"; };
+		8B0FD9F820E108CF004E33FE /* PRTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTodayViewController.m; sourceTree = "<group>"; };
 		8B0FD9FB20E108CF004E33FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B0FD9FD20E108D1004E33FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0FDA0020E108D1004E33FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +43,15 @@
 		8B0FDA8520E39ECA004E33FE /* PRPatient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPatient.m; sourceTree = "<group>"; };
 		8B0FDA8720E3A7AB004E33FE /* PRPatientIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPatientIconView.h; sourceTree = "<group>"; };
 		8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPatientIconView.m; sourceTree = "<group>"; };
+		8B0FDAA320E503D4004E33FE /* PRTakePillTodayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRTakePillTodayCell.xib; sourceTree = "<group>"; };
+		8B0FDAA520E50F97004E33FE /* PRTakePillTodayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTakePillTodayCell.h; sourceTree = "<group>"; };
+		8B0FDAA620E50F97004E33FE /* PRTakePillTodayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTakePillTodayCell.m; sourceTree = "<group>"; };
+		8B0FDAA820E51580004E33FE /* PRPill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPill.h; sourceTree = "<group>"; };
+		8B0FDAA920E51580004E33FE /* PRPill.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPill.m; sourceTree = "<group>"; };
+		8B0FDAAB20E5191C004E33FE /* PRPillToday.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPillToday.h; sourceTree = "<group>"; };
+		8B0FDAAC20E5191C004E33FE /* PRPillToday.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPillToday.m; sourceTree = "<group>"; };
+		8B4B3F4B20E66509008A5851 /* ApproveTakenPillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApproveTakenPillViewController.h; sourceTree = "<group>"; };
+		8B4B3F4C20E66509008A5851 /* ApproveTakenPillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApproveTakenPillViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +98,10 @@
 		8B0FDA7A20E267D0004E33FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B0FD9F720E108CF004E33FE /* ViewController.h */,
-				8B0FD9F820E108CF004E33FE /* ViewController.m */,
+				8B0FD9F720E108CF004E33FE /* PRTodayViewController.h */,
+				8B0FD9F820E108CF004E33FE /* PRTodayViewController.m */,
+				8B4B3F4B20E66509008A5851 /* ApproveTakenPillViewController.h */,
+				8B4B3F4C20E66509008A5851 /* ApproveTakenPillViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -97,6 +113,9 @@
 				8B0FDA7820E2667C004E33FE /* PRNotificationIconView.m */,
 				8B0FDA8720E3A7AB004E33FE /* PRPatientIconView.h */,
 				8B0FDA8820E3A7AB004E33FE /* PRPatientIconView.m */,
+				8B0FDAA520E50F97004E33FE /* PRTakePillTodayCell.h */,
+				8B0FDAA620E50F97004E33FE /* PRTakePillTodayCell.m */,
+				8B0FDAA320E503D4004E33FE /* PRTakePillTodayCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -108,6 +127,10 @@
 				8B0FDA8220E37AB0004E33FE /* PRNotificationCounter.m */,
 				8B0FDA8420E39ECA004E33FE /* PRPatient.h */,
 				8B0FDA8520E39ECA004E33FE /* PRPatient.m */,
+				8B0FDAA820E51580004E33FE /* PRPill.h */,
+				8B0FDAA920E51580004E33FE /* PRPill.m */,
+				8B0FDAAB20E5191C004E33FE /* PRPillToday.h */,
+				8B0FDAAC20E5191C004E33FE /* PRPillToday.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -189,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0FDA0120E108D1004E33FE /* LaunchScreen.storyboard in Resources */,
+				8B4B3F3220E52E3D008A5851 /* PRTakePillTodayCell.xib in Resources */,
 				8B0FD9FE20E108D1004E33FE /* Assets.xcassets in Resources */,
 				8B0FD9FC20E108CF004E33FE /* Main.storyboard in Resources */,
 			);
@@ -202,10 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0FDA7920E2667C004E33FE /* PRNotificationIconView.m in Sources */,
-				8B0FD9F920E108CF004E33FE /* ViewController.m in Sources */,
+				8B0FD9F920E108CF004E33FE /* PRTodayViewController.m in Sources */,
 				8B0FDA0420E108D1004E33FE /* main.m in Sources */,
 				8B0FDA8620E39ECA004E33FE /* PRPatient.m in Sources */,
 				8B0FD9F620E108CF004E33FE /* AppDelegate.m in Sources */,
+				8B0FDAAA20E51580004E33FE /* PRPill.m in Sources */,
+				8B0FDAAD20E5191C004E33FE /* PRPillToday.m in Sources */,
+				8B4B3F4D20E66509008A5851 /* ApproveTakenPillViewController.m in Sources */,
+				8B0FDAA720E50F97004E33FE /* PRTakePillTodayCell.m in Sources */,
 				8B0FDA8920E3A7AB004E33FE /* PRPatientIconView.m in Sources */,
 				8B0FDA8320E37AB0004E33FE /* PRNotificationCounter.m in Sources */,
 			);
@@ -354,6 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogniance.PillsReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,6 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogniance.PillsReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

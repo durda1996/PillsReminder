@@ -31,6 +31,8 @@
 
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         self.imageView.layer.cornerRadius = self.imageView.frame.size.width / 2;
+        self.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.imageView.layer.borderWidth = 1.0f;
         self.imageView.clipsToBounds = YES;
         [self addSubview:self.imageView];
 
@@ -38,6 +40,7 @@
         self.label.font = [UIFont systemFontOfSize:13];
         self.label.lineBreakMode = NSLineBreakByWordWrapping;
         self.label.numberOfLines = 0;
+        self.label.textColor = [UIColor whiteColor];
         [self addSubview:self.label];
 
         [self update];

@@ -29,7 +29,9 @@
         self.bounds = CGRectMake(0, 0, 30, 30);
 
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
-        imageView.image = [UIImage imageNamed:@"notification"];
+        UIImage *notificationIcon = [UIImage imageNamed:@"notification"];
+        imageView.image = [notificationIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [imageView setTintColor:[UIColor whiteColor]];
         [self addSubview:imageView];
 
         self.redCircleImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height / 2, 18, 18)];
