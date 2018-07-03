@@ -77,7 +77,163 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="81" y="133"/>
+        </scene>
+        <!--Approve Taken Pill View Controller-->
+        <scene sceneID="qyl-8Y-EQ7">
+            <objects>
+                <viewController storyboardIdentifier="PRApproveTakenPillViewController" id="Us9-iq-D5e" customClass="PRApproveTakenPillViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pv5-yV-t0V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-wW-4V6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.50778047400000004" green="0.68765717169999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Confirm taken pill" id="90k-bA-nH1">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; back" id="jSB-UL-kfo">
+                                            <connections>
+                                                <action selector="back:" destination="Us9-iq-D5e" id="S2Y-W3-BiT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-YX-iOq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.50778047400000004" green="0.68765717169999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jXV-2U-q6b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPD-WU-avI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="263"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cik-Kk-Wc6">
+                                        <rect key="frame" x="21" y="61" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="Ffk-wm-Ypg"/>
+                                            <constraint firstAttribute="width" constant="140" id="o6q-rt-gNj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pill name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8s-US-OLm">
+                                        <rect key="frame" x="21" y="8" width="333" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-pg-jNQ">
+                                        <rect key="frame" x="169" y="86" width="39" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taken Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f0-h7-rhZ">
+                                        <rect key="frame" x="169" y="148" width="86" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-KA-22n">
+                                        <rect key="frame" x="323" y="148" width="44" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 pills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ac-SM-9Bb">
+                                        <rect key="frame" x="324" y="86" width="43" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50778047400000004" green="0.68765717169999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0f0-h7-rhZ" firstAttribute="top" secondItem="dAo-pg-jNQ" secondAttribute="bottom" constant="42" id="4pl-am-CtY"/>
+                                    <constraint firstItem="M8s-US-OLm" firstAttribute="leading" secondItem="TPD-WU-avI" secondAttribute="leading" constant="21" id="57P-PI-vRs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cik-Kk-Wc6" secondAttribute="bottom" constant="62" id="7ha-cy-4Zf"/>
+                                    <constraint firstAttribute="height" constant="263" id="8CK-3a-cAj"/>
+                                    <constraint firstItem="Cik-Kk-Wc6" firstAttribute="top" secondItem="M8s-US-OLm" secondAttribute="bottom" constant="21" id="Ewx-3K-n06"/>
+                                    <constraint firstItem="7Ac-SM-9Bb" firstAttribute="top" secondItem="TPD-WU-avI" secondAttribute="top" constant="86" id="IHA-XL-z1s"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Ac-SM-9Bb" secondAttribute="trailing" constant="8" id="K76-HT-Yv1"/>
+                                    <constraint firstItem="dAo-pg-jNQ" firstAttribute="top" secondItem="TPD-WU-avI" secondAttribute="top" constant="86" id="KkV-jH-6r6"/>
+                                    <constraint firstItem="Cik-Kk-Wc6" firstAttribute="leading" secondItem="TPD-WU-avI" secondAttribute="leading" constant="21" id="Nml-Fm-I6a"/>
+                                    <constraint firstItem="Ruf-KA-22n" firstAttribute="top" secondItem="7Ac-SM-9Bb" secondAttribute="bottom" constant="42" id="SP2-Hw-G2f"/>
+                                    <constraint firstItem="M8s-US-OLm" firstAttribute="top" secondItem="TPD-WU-avI" secondAttribute="top" constant="8" id="TuU-AO-Jsg"/>
+                                    <constraint firstItem="dAo-pg-jNQ" firstAttribute="leading" secondItem="Cik-Kk-Wc6" secondAttribute="trailing" constant="8" id="UNa-F6-prl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ruf-KA-22n" secondAttribute="trailing" constant="8" id="fC3-pm-OgF"/>
+                                    <constraint firstAttribute="trailing" secondItem="M8s-US-OLm" secondAttribute="trailing" constant="21" id="qV6-e8-QHS"/>
+                                    <constraint firstItem="0f0-h7-rhZ" firstAttribute="leading" secondItem="Cik-Kk-Wc6" secondAttribute="trailing" constant="8" id="rPV-Ux-ubF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-RU-IqT">
+                                <rect key="frame" x="0.0" y="327" width="375" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHp-Z8-J5h">
+                                        <rect key="frame" x="152" y="262" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="BX7-14-0c1"/>
+                                            <constraint firstAttribute="height" constant="70" id="wmw-ns-7QX"/>
+                                        </constraints>
+                                        <state key="normal" title="Move later" image="later"/>
+                                        <connections>
+                                            <action selector="moveTakePillLater:" destination="Us9-iq-D5e" eventType="touchUpInside" id="1Fc-Yk-ixo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eo-sS-FMV">
+                                        <rect key="frame" x="112" y="104" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="JUR-DE-gNi"/>
+                                            <constraint firstAttribute="height" constant="150" id="d9w-Jr-Vxf"/>
+                                        </constraints>
+                                        <state key="normal" title="Confirm" image="accept"/>
+                                        <connections>
+                                            <action selector="approveTakenPills:" destination="Us9-iq-D5e" eventType="touchUpInside" id="Ctc-kg-5eb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7eo-sS-FMV" firstAttribute="centerX" secondItem="Zqv-RU-IqT" secondAttribute="centerX" id="FLG-f1-9CO"/>
+                                    <constraint firstItem="dHp-Z8-J5h" firstAttribute="centerX" secondItem="Zqv-RU-IqT" secondAttribute="centerX" id="UOW-65-w00"/>
+                                    <constraint firstAttribute="bottom" secondItem="dHp-Z8-J5h" secondAttribute="bottom" constant="8" id="gkf-5G-tvX"/>
+                                    <constraint firstItem="dHp-Z8-J5h" firstAttribute="top" secondItem="7eo-sS-FMV" secondAttribute="bottom" constant="8" id="yYt-cX-d4M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zqv-RU-IqT" firstAttribute="bottom" secondItem="BnQ-s0-PN0" secondAttribute="bottom" id="6Vc-eO-vnl"/>
+                            <constraint firstItem="TPD-WU-avI" firstAttribute="trailing" secondItem="BnQ-s0-PN0" secondAttribute="trailing" id="8Cq-lG-CLG"/>
+                            <constraint firstItem="TPD-WU-avI" firstAttribute="top" secondItem="yRJ-wW-4V6" secondAttribute="bottom" id="KKM-EX-1H1"/>
+                            <constraint firstItem="TPD-WU-avI" firstAttribute="leading" secondItem="BnQ-s0-PN0" secondAttribute="leading" id="NUg-Wg-6iB"/>
+                            <constraint firstItem="yRJ-wW-4V6" firstAttribute="trailing" secondItem="BnQ-s0-PN0" secondAttribute="trailing" id="Nvf-M5-cp6"/>
+                            <constraint firstItem="yRJ-wW-4V6" firstAttribute="leading" secondItem="BnQ-s0-PN0" secondAttribute="leading" id="QEl-LR-711"/>
+                            <constraint firstItem="yRJ-wW-4V6" firstAttribute="top" secondItem="Ned-YX-iOq" secondAttribute="bottom" id="R8i-Ls-PTS"/>
+                            <constraint firstItem="Zqv-RU-IqT" firstAttribute="top" secondItem="TPD-WU-avI" secondAttribute="bottom" id="ZNg-g1-PZf"/>
+                            <constraint firstItem="Zqv-RU-IqT" firstAttribute="trailing" secondItem="BnQ-s0-PN0" secondAttribute="trailing" id="d0B-4M-Pep"/>
+                            <constraint firstAttribute="trailing" secondItem="Ned-YX-iOq" secondAttribute="trailing" id="fq7-oC-IHm"/>
+                            <constraint firstItem="Zqv-RU-IqT" firstAttribute="leading" secondItem="BnQ-s0-PN0" secondAttribute="leading" id="pQh-2d-Cah"/>
+                            <constraint firstItem="Ned-YX-iOq" firstAttribute="top" secondItem="Pv5-yV-t0V" secondAttribute="top" id="pov-b3-EVE"/>
+                            <constraint firstItem="Ned-YX-iOq" firstAttribute="leading" secondItem="Pv5-yV-t0V" secondAttribute="leading" id="uSg-6b-rya"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BnQ-s0-PN0"/>
+                    </view>
+                    <connections>
+                        <outlet property="doseLabel" destination="7Ac-SM-9Bb" id="fVP-Zo-Ek2"/>
+                        <outlet property="imageView" destination="Cik-Kk-Wc6" id="Je2-CF-3BN"/>
+                        <outlet property="nameLabel" destination="M8s-US-OLm" id="ppX-Gq-UxF"/>
+                        <outlet property="takenTimeLabel" destination="Ruf-KA-22n" id="gkH-g9-LEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anf-VR-a5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="accept" width="240" height="240"/>
+        <image name="later" width="256" height="256"/>
+    </resources>
 </document>
